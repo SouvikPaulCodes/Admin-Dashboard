@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'abeezeeregular';
+    src: url('./font/abeezee-regular-webfont.woff2') format('woff2'),
+         url('./font/abeezee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'abeezeeregular', Arial, Helvetica, sans-serif;
+}
+
+body, .dashboard, .header, .grid, .right {
+    display: grid;
+}
+
+body {
+    grid: 1fr 6fr / 1fr 3fr 1.3fr;
+    margin: 0px;
+}
+
+.dashboard {
+    grid-row: 1 / span 2;
+    background-color: #38bdf8;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.05fr 1fr 0.01fr 0.7fr 2fr 2fr;
+    justify-content: start;
+}
+
+.projects {
+    grid-column: 2 / span 1;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #e5e7eb;
+}
+
+.header {
+    padding: 20px;
+    grid-column: 2 / span 2;
+    grid: repeat(2, max(60px)) / 2fr 1fr;
+    gap: 40px;
+    align-content: stretch;
+    box-shadow: 0px 5px 5px rgb(224, 224, 224);
+}
+
+.right {
+    grid-column-start: 3;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.top {
+    display: flex;
+    gap: 7px;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.grid {
+    padding-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.tabs {
+    grid-row: 3 / 4;
+}
+
+.help {
+    grid-row: 5 / 6;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 70%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input:focus {
+    background-color: rgb(211, 211, 211);
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img[alt="profile photo"] {
+    width: 50px;
+    height: 50px;
+}
+
+.proname {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro>img {
+    width: 70px;
+    height: auto;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user {
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 2px 15px;
+    height: min-content;
+    background-color: #38bdf8;
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.card {
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
+    border-left: 20px solid rgb(209, 209, 0);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card>div:nth-child(2) {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.projects>div:nth-child(1), .announcements>div:nth-child(1), .trending>div:nth-child(1) {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.share {
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.announce {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.part {
+    padding: 20px;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+}
+
+.part>div:nth-child(1) {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.part>div:nth-child(2) {
+    font-size: 10px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trend {
+    display: grid;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trend>div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
